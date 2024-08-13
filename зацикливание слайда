@@ -1,0 +1,8 @@
+const sliderElem = document.querySelector('.slider');
+const slider = ItcSlider.getInstance(sliderElem);
+// остановим автоматическую смену слайдов
+slider.autoplay.stop();
+// перейдём к предыдущему слайду
+slider.prev();
+// сбросим состояние слайдера к первоначальному
+slider.reset()
