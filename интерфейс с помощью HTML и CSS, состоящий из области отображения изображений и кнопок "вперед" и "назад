@@ -4,6 +4,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 a {
+p {
+  color: red; /*viewport  */
+}
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
@@ -22,6 +25,9 @@ a:hover {
 .next {
   background-color: #4CAF50;
   color: white;
+}
+div {
+  background: linear-gradient(to right, red, yellow);
 }
 
 .round {
