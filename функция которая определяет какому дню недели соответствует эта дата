@@ -1,0 +1,26 @@
+import datetime
+import calendar
+ 
+def check_weekday_or_weekend(date):
+    try:
+        # Convert the input date string to a datetime object
+        given_date = datetime.datetime.strptime(date, '%d %m %Y')
+         
+        # Use isoweekday() to get the weekday (Monday is 1 and Sunday is 7)
+        day_of_week = (given_date.weekday() + 1) % 7  # Convert Sunday from 6 to 0
+         
+        # Determine if it's a weekday or a weekend
+        if day_of_week < 5:
+            day_type = 'weekday'
+        else:
+            day_type = 'weekend'
+         
+        # Print the result
+        print(f"The day of the week for {given_date.strftime('%Y-%m-%d')} is {day_of_week} ({day_type})")
+         
+    except ValueError as e:
+        print(f"Error: {e}")
+ 
+# Example usage
+date = '03 02 2019'
+check_weekday_or_weekend(date)
