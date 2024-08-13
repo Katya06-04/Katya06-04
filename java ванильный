@@ -1,0 +1,21 @@
+ <script type="text/javascript">
+            function chg1 (id)
+            {
+                var el = document.getElementById(id);
+                var all = new Array();
+                var num = 0;
+                all[0] = "https://www.cyberforum.ru/images/Europ001.png";
+                all[1] = "https://www.cyberforum.ru/images/Asia001.png";
+                all[2] = "https://www.cyberforum.ru/images/America001.png";
+                for (var i=0; i<3; i++)
+                {
+                    if (el.src == all[i])
+                    {
+                        num == i;
+                        break;
+                    }
+                }
+                num++;
+                el.src=all[num];
+            }   
+        </script>
